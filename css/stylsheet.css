@@ -45,6 +45,21 @@ body {
   color: #757575;
 }
 
+.logo {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: #212121;
+  text-decoration: none;
+}
+
+.logo-web {
+  color: #2196f3;
+}
+
 .menu-link {
   font-weight: 500;
   font-size: 14px;
@@ -86,6 +101,22 @@ body {
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: transparent;
+}
+.btn-portfolio {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+  color: #212121;
+  background-color: transparent;
+}
+
+.btn-portfolio:hover,
+.btn-portfolio:focus {
+  columns: #ffffff;
+  background-color: #2196f3;
 }
 
 .hero {
@@ -136,8 +167,8 @@ body {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.logo {
-  font-family: Raleway;
+.projects {
+  font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -147,12 +178,20 @@ body {
   color: #212121;
 }
 
-.logo-web {
-  color: #2196f3;
+.projects a {
+  text-decoration: none;
 }
 
 .footer {
   background: #2f303a;
+}
+
+.join-us {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.143px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
 }
 
 .address {
