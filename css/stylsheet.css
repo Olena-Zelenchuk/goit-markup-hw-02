@@ -2,13 +2,71 @@
 dark-color - #212121
 main-color - #757575
 wait - #FFFFFF
-adress-link-color - color: rgba(255, 255, 255, 0.6)**/
+adress-link-color - color: rgba(255, 255, 255, 0.6)
 
-@font-face {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
+
+phonts logo 
+     font-family: Raleway;
+     font-style: normal;
+     font-weight: bold;
+     
+phonts header names 
+     font-family: Roboto;
+     font-style: normal;
+     font-weight: 500;
+    
+phonts hero
+     font-family: Roboto;
+     ont-style: normal;
+     font-weight: 900 
+     
+phonts titels
+     font-family: Roboto;
+     font-style: normal;
+     font-weight: bold;
+     
+phonts main
+     font-family: Roboto;
+     font-style: normal;
+     font-weight: normal;
+     
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+
+font-family: "Raleway", sans-serif;
+font-family: "Roboto", sans-serif;**/
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 
-@font-face {
+.menu-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: #212121;
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+
+.hero {
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.hero-title {
+  font-family: Roboto, sans-serif;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.364;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
 }
