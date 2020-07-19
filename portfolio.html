@@ -14,33 +14,43 @@
 
   <body>
     <header>
-      <a href="./"><span>Web</span>Studio</a>
+      <a href="./" class="logo"><span class="logo-web">Web </span>Studio</a>
       <nav>
-        <ul>
-          <li><a href="./index.html">Студия</a></li>
-          <li><a href="#">Портфолио</a></li>
-          <li><a href="#">Контакты</a></li>
+        <ul class="list">
+          <li><a href="#" class="menu-link"> Студия </a></li>
+          <li><a href="./portfolio.html" class="menu-link">Портфолио</a></li>
+          <li><a href="#" class="menu-link">Контакты</a></li>
         </ul>
       </nav>
-      <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <a href="tel:+380961111111">+38 096 111 11 11</a>
+      <div>
+        <a href="mailto:info@devstudio.com" class="contacts-link"
+          >info@devstudio.com</a
+        >
+        <a href="tel:+380961111111" class="contacts-link">+38 096 111 11 11</a>
+      </div>
     </header>
 
     <main>
-      <h1>Portfolio</h1>
+      <h1 hidden>Portfolio</h1>
       <!--Projects-->
       <section>
-        <h2>PROJECTS</h2>
+        <h2 hidden>PROJECTS</h2>
         <div>
-          <ul>
-            <li><button type="button">Все</button></li>
-            <li><button type="button">Веб-сайты</button></li>
-            <li><button type="button">Приложения</button></li>
-            <li><button type="button">Дизайн</button></li>
-            <li><button type="button">Маркетинг</button></li>
+          <ul class="list">
+            <li><button type="button" class="btn-portfolio">Все</button></li>
+            <li>
+              <button type="button" class="btn-portfolio">Веб-сайты</button>
+            </li>
+            <li>
+              <button type="button" class="btn-portfolio">Приложения</button>
+            </li>
+            <li><button type="button" class="btn-portfolio">Дизайн</button></li>
+            <li>
+              <button type="button" class="btn-portfolio">Маркетинг</button>
+            </li>
           </ul>
         </div>
-        <ul>
+        <ul class="projects list">
           <li>
             <a href="#" aria-label="ссылка Технокряк"
               ><img
@@ -48,8 +58,8 @@
                 alt="Технокряк"
                 width="370"
               />
-              <h3>Технокряк</h3>
-              <p>Веб-сайт</p></a
+              <h3 class="names">Технокряк</h3>
+              <p class="main-text">Веб-сайт</p></a
             >
           </li>
           <li>
@@ -59,8 +69,8 @@
                 alt="Постер New Orlean vs Golden Star"
                 width="370"
               />
-              <h3 lang="eng">Постер New Orlean vs Golden Star</h3>
-              <p>Дизайн</p></a
+              <h3 lang="eng" class="names">Постер New Orlean vs Golden Star</h3>
+              <p class="main-text">Дизайн</p></a
             >
           </li>
           <li>
@@ -70,8 +80,8 @@
                 alt="Ресторан Seafood"
                 width="370"
               />
-              <h3>Ресторан Seafood</h3>
-              <p>Приложение</p></a
+              <h3 class="names">Ресторан Seafood</h3>
+              <p class="main-text">Приложение</p></a
             >
           </li>
           <li>
@@ -81,8 +91,8 @@
                 alt="Проект Prime"
                 width="370"
               />
-              <h3>Проект Prime</h3>
-              <p>Маркетинг</p></a
+              <h3 class="names">Проект Prime</h3>
+              <p class="main-text">Маркетинг</p></a
             >
           </li>
           <li>
@@ -92,8 +102,8 @@
                 alt="Проект Boxes"
                 width="370"
               />
-              <h3>Проект Boxes</h3>
-              <p>Приложение</p></a
+              <h3 class="names">Проект Boxes</h3>
+              <p class="main-text">Приложение</p></a
             >
           </li>
           <li>
@@ -103,8 +113,8 @@
                 alt="Inspiration has no Borders"
                 width="370"
               />
-              <h3 lang="eng">Inspiration has no Borders</h3>
-              <p>Веб-сайт</p></a
+              <h3 lang="eng" class="names">Inspiration has no Borders</h3>
+              <p class="main-text">Веб-сайт</p></a
             >
           </li>
           <li>
@@ -114,8 +124,8 @@
                 alt="Издание Limited Edition"
                 width="370"
               />
-              <h3>Издание Limited Edition</h3>
-              <p>Дизайн</p></a
+              <h3 class="names">Издание Limited Edition</h3>
+              <p class="main-text">Дизайн</p></a
             >
           </li>
           <li>
@@ -125,8 +135,8 @@
                 alt="Проект LAB"
                 width="370"
               />
-              <h3>Проект LAB</h3>
-              <p>Маркетинг</p></a
+              <h3 class="names">Проект LAB</h3>
+              <p class="main-text">Маркетинг</p></a
             >
           </li>
           <li>
@@ -136,26 +146,28 @@
                 alt="Growing Business"
                 width="370"
               />
-              <h3 lang="eng">Growing Business</h3>
-              <p>Приложение</p></a
+              <h3 lang="eng" class="names">Growing Business</h3>
+              <p class="main-text">Приложение</p></a
             >
           </li>
         </ul>
       </section>
     </main>
 
-    <footer>
-      <a href="./"><span>Web</span>Studio</a>
-      <address>
+    <footer class="footer">
+      <a href="./" class="logo"><span class="logo-web">Web</span>Studio</a>
+      <address class="address">
         <p>г. Киев, пр-т Леси Украинки, 26</p>
         <br />
-        <a href="mailto:info@example.com">info@example.com</a>
-        <a href="tel:+380991111111">+38 099 111 11 11</a>
+        <a href="mailto:info@example.com" class="address-linl"
+          >info@example.com</a
+        >
+        <a href="tel:+380991111111" class="address-linl">+38 099 111 11 11</a>
       </address>
       <!--JoinUS-->
-      <div>
+      <div class="join-us">
         <p><b>присоединяйтесь</b></p>
-        <ul>
+        <ul class="list">
           <li>
             <a href="#" aria-label="ссылка Instagram"
               ><img src="./img/instagram.svg" alt="Instagram"
