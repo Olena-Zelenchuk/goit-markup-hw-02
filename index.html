@@ -14,7 +14,7 @@
 
   <body>
     <header>
-      <a href="./"><span>Web</span>Studio</a>
+      <a href="./" class="logo"><span class="logo-web">Web </span>Studio</a>
       <nav>
         <ul class="list">
           <li><a href="#" class="menu-link"> Студия </a></li>
@@ -23,53 +23,55 @@
         </ul>
       </nav>
       <div>
-        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a href="tel:+380961111111">+38 096 111 11 11</a>
+        <a href="mailto:info@devstudio.com" class="contacts-link"
+          >info@devstudio.com</a
+        >
+        <a href="tel:+380961111111" class="contacts-link">+38 096 111 11 11</a>
       </div>
     </header>
     <main>
       <!--Hero-->
       <section class="hero">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button>Заказать услугу</button>
+        <button class="btn">Заказать услугу</button>
       </section>
 
       <!--Our benefits-->
       <section>
         <!--there is h2, so next there are h3 in this section, not <p>-->
         <h2>Our benefits</h2>
-        <ul>
+        <ul class="list">
           <li>
-            <h3>Внимание к деталям</h3>
+            <h3 class=".benefits-title">Внимание к деталям</h3>
             <img src="./img/details.svg" alt="детали важны" />
-            <p>
+            <p class="main-text">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
           <li>
-            <h3>Пунктуальность</h3>
+            <h3 class=".benefits-title">Пунктуальность</h3>
             <img src="./img/punctual.svg" alt="все вовремя" />
-            <p>
+            <p class="main-text">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
           <li>
-            <h3>Планирование</h3>
+            <h3 class=".benefits-title">Планирование</h3>
             <img src="./img/planing.svg" alt="мы планируем" />
-            <p>
+            <p class="main-text">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
           <li>
-            <h3>Современные технологии</h3>
+            <h3 class=".benefits-title">Современные технологии</h3>
             <img
               src="./img/technology.svg"
               alt="только современные технологии"
             />
-            <p>
+            <p class="main-text">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
             </p>
@@ -78,15 +80,15 @@
       </section>
       <!--What do we do-->
       <section>
-        <h2>Чем мы занимаемся</h2>
-        <ul>
+        <h2 class="section-title">Чем мы занимаемся</h2>
+        <ul class="list">
           <li>
             <img
               src="./img/desktop.jpg"
               alt="Десктопные приложения"
               width="370"
             />
-            <p>Десктопные приложения</p>
+            <p class="what-we-do-text">Десктопные приложения</p>
           </li>
           <li>
             <img
@@ -94,7 +96,7 @@
               alt="Мобильные приложения"
               width="370"
             />
-            <p>Мобильные приложения</p>
+            <p class="what-we-do-text">Мобильные приложения</p>
           </li>
           <li>
             <img
@@ -102,23 +104,23 @@
               alt="Дизайнерские решения"
               width="370"
             />
-            <p>Дизайнерские решения</p>
+            <p class="what-we-do-text">Дизайнерские решения</p>
           </li>
         </ul>
       </section>
       <!--Our team-->
       <section>
-        <h2>Наша команда</h2>
-        <ul>
+        <h2 class="section-title">Наша команда</h2>
+        <ul class="list">
           <li>
             <img
               src="./img/kucherenko.jpg"
               alt="Николай Кучеренко"
               width="270"
             />
-            <h3>Николай Кучеренко</h3>
-            <p>Product Designer</p>
-            <ul>
+            <h3 class="names">Николай Кучеренко</h3>
+            <p class="main-text">Product Designer</p>
+            <ul class="list">
               <li>
                 <a href="#" aria-label="ссылка Facebook"
                   ><img src="./img/facebook.svg" alt="Facebook"
@@ -143,9 +145,9 @@
           </li>
           <li>
             <img src="./img/ivanova.jpg" alt="Ольга Иванова" width 270 />
-            <h3>Ольга Иванова</h3>
-            <p>Frontend Developer</p>
-            <ul>
+            <h3 class="names">Ольга Иванова</h3>
+            <p class="main-text">Frontend Developer</p>
+            <ul class="list">
               <li>
                 <a href="#" aria-label="ссылка Facebook"
                   ><img src="./img/facebook.svg" alt="Facebook"
@@ -171,9 +173,9 @@
 
           <li>
             <img src="./img/sevchenko.jpg" alt="Ольга Иванова" width 270 />
-            <h3>Андрей Шевченко</h3>
-            <p>Marketing</p>
-            <ul>
+            <h3 class="names">Андрей Шевченко</h3>
+            <p class="main-text">Marketing</p>
+            <ul class="list">
               <li>
                 <a href="#" aria-label="ссылка Facebook"
                   ><img src="./img/facebook.svg" alt="Facebook"
@@ -198,9 +200,9 @@
           </li>
           <li>
             <img src="./img/nikolarv.jpg" alt="Иван Николаев" width 270 />
-            <h3>Иван Николаев</h3>
-            <p>UI Designer</p>
-            <ul>
+            <h3 class="names">Иван Николаев</h3>
+            <p class="main-text">UI Designer</p>
+            <ul class="list">
               <li>
                 <a href="#" aria-label="ссылка Facebook"
                   ><img src="./img/facebook.svg" alt="Facebook"
@@ -227,8 +229,8 @@
       </section>
       <!--Clients-->
       <section>
-        <h2>Постоянные клиенты</h2>
-        <ul>
+        <h2 class="section-title">Постоянные клиенты</h2>
+        <ul class="list">
           <li>
             <a href="#" aria-label="ссылка YA & CO"
               ><img src="./img/logo1.svg" alt="YA & CO"
@@ -263,18 +265,20 @@
       </section>
     </main>
 
-    <footer>
-      <a href="./"><span>Web</span>Studio</a>
-      <address>
+    <footer class="footer">
+      <a href="./" class="logo"><span class="logo-web">Web</span>Studio</a>
+      <address class="address">
         <p>г. Киев, пр-т Леси Украинки, 26</p>
         <br />
-        <a href="mailto:info@example.com">info@example.com</a>
-        <a href="tel:+380991111111">+38 099 111 11 11</a>
+        <a href="mailto:info@example.com" class="address-linl"
+          >info@example.com</a
+        >
+        <a href="tel:+380991111111" class="address-linl">+38 099 111 11 11</a>
       </address>
       <!--JoinUS-->
       <div>
         <p><b>присоединяйтесь</b></p>
-        <ul>
+        <ul class="list">
           <li>
             <a href="#" aria-label="ссылка Instagram"
               ><img src="./img/instagram.svg" alt="Instagram"
