@@ -3,60 +3,60 @@ dark-color - #212121
 main-color - #757575
 wait - #FFFFFF
 adress-link-color - color: rgba(255, 255, 255, 0.6)
+**/
 
-
-phonts logo 
-     font-family: Raleway;
-     font-style: normal;
-     font-weight: bold;
-     
-phonts header names 
-     font-family: Roboto;
-     font-style: normal;
-     font-weight: 500;
-    
-phonts hero
-     font-family: Roboto;
-     ont-style: normal;
-     font-weight: 900 
-     
-phonts titels
-     font-family: Roboto;
-     font-style: normal;
-     font-weight: bold;
-     
-phonts main
-     font-family: Roboto;
-     font-style: normal;
-     font-weight: normal;
-     
-font-family: 'Raleway', sans-serif;
-font-family: 'Roboto', sans-serif;
-
-
-font-family: "Raleway", sans-serif;
-font-family: "Roboto", sans-serif;**/
+:root {
+  --main-text-color: #757575;
+  --dark-text-color: #212121;
+  --main-white-color: #ffffff;
+  --adress-link-color: rgba(255, 255, 255, 0.6);
+  --accent-color: #2196f3;
+}
 
 body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: #757575;
+
+  background-color: var(--main-white-color);
+  color: var(--main-text-color);
+
+  margin: 0px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+section {
+  padding-top: 0px;
+  padding-bottom: 94px;
+}
+
+h2,
+h3,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .logo {
   font-family: Raleway, sans-serif;
-  font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--dark-text-color);
   text-decoration: none;
 }
 
 .logo-web {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .menu-link {
@@ -64,17 +64,19 @@ body {
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--dark-text-color);
   text-decoration: none;
 }
 
 .menu-link:hover,
 .menu-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .contacts-link {
@@ -83,27 +85,35 @@ body {
   line-height: 1.142;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: #757575;
+  color: var(--main-text-color);
 }
 
 .contacts-link:hover,
 .contacts-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .current {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .btn {
+  display: inline-block;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+
+  color: var(--main-white-color);
   background-color: transparent;
+
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  text-align: center;
 }
 .btn-portfolio {
   font-family: inherit;
@@ -111,14 +121,16 @@ body {
   font-size: 16px;
   line-height: 1.625;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--dark-text-color);
   background-color: transparent;
 }
 
+.btn:hover,
+.btn:focus,
 .btn-portfolio:hover,
 .btn-portfolio:focus {
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--main-white-color);
+  background-color: var(--accent-color);
 }
 
 .hero {
@@ -131,7 +143,11 @@ body {
   line-height: 1.364;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+
+  color: var(--main-white-color);
+
+  margin-top: 0;
+  margin-bottom: 0px;
 }
 
 .section-title {
@@ -140,7 +156,7 @@ body {
   line-height: 1.167;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #212121;
+  color: var(--dark-text-color);
 }
 
 .main-text {
@@ -148,7 +164,7 @@ body {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--main-text-color);
 }
 
 .benefits-title,
@@ -157,7 +173,7 @@ body {
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--dark-text-color);
 }
 
 .what-we-do-text {
@@ -165,7 +181,7 @@ body {
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--main-white-color);
   background: rgba(47, 48, 58, 0.8);
 }
 
@@ -177,7 +193,7 @@ body {
   line-height: 1.192;
   tter-spacing: 0.03em;
   text-decoration: none;
-  color: #212121;
+  color: var(--dark-text-color);
 }
 
 .projects a {
@@ -193,15 +209,16 @@ body {
   font-size: 14px;
   line-height: 1.143px;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--main-white-color);
 }
 
 .address {
+  font-style: inherit;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--main-white-color);
 }
 
 .address-linl {
@@ -210,5 +227,5 @@ body {
   line-height: 1.714;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--adress-link-color);
 }
