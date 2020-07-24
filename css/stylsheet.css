@@ -26,12 +26,11 @@ body {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
   width: 1200px;
-
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 section {
@@ -44,6 +43,18 @@ h3,
 p {
   margin-top: 0px;
   margin-bottom: 0px;
+}
+
+.header-page {
+  display: flex;
+  padding: ;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+
+  padding: 32px 0;
 }
 
 .logo {
@@ -59,7 +70,32 @@ p {
   color: var(--accent-color);
 }
 
+.navigation {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list-item:not(last-child) {
+  margin-right: 50px;
+}
+
+.link-list {
+  display: flex;
+}
+.contacts-link:not(last-child) {
+  margin-right: 30px;
+}
+
 .menu-link {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
@@ -79,6 +115,9 @@ p {
   padding: 0;
 }
 
+.link-list:not(last-child) {
+  margin-right: 30px;
+}
 .contacts-link {
   font-weight: 500;
   font-size: 14px;
@@ -100,6 +139,13 @@ p {
 .btn {
   display: inline-block;
 
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  text-align: center;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -109,11 +155,6 @@ p {
 
   color: var(--main-white-color);
   background-color: transparent;
-
-  border-radius: 4px;
-  padding: 10px 32px;
-  min-width: 200px;
-  text-align: center;
 }
 .btn-portfolio {
   font-family: inherit;
@@ -138,6 +179,9 @@ p {
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 0px;
+
   font-size: 44px;
   font-weight: 900;
   line-height: 1.364;
@@ -145,18 +189,26 @@ p {
   letter-spacing: 0.06em;
 
   color: var(--main-white-color);
-
-  margin-top: 0;
-  margin-bottom: 0px;
 }
 
 .section-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--dark-text-color);
+}
+
+.benefits-list {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: calc((100% - 30px * 3) / 4);
+}
+.benefits-item {
 }
 
 .main-text {
@@ -176,6 +228,15 @@ p {
   color: var(--dark-text-color);
 }
 
+.what-we-do-list {
+  display: flex;
+  width: calc((100% - 30px * 2) / 3);
+}
+
+.what-we-do-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .what-we-do-text {
   font-weight: 700;
   font-size: 14px;
@@ -183,6 +244,34 @@ p {
   letter-spacing: 0.03em;
   color: var(--main-white-color);
   background: rgba(47, 48, 58, 0.8);
+  text-align: center;
+}
+
+.team-list {
+  display: flex;
+  width: calc((100% - 30px * 3) / 4);
+}
+
+.person-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.person-list .names {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  text-align: center;
+}
+
+.person-list p {
+  text-align: center;
+}
+
+.team-social-link-li {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 16px;
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .projects {
