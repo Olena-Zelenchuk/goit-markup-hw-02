@@ -147,13 +147,8 @@ p {
 
 .btn {
   display: inline-block;
-
-  margin-right: auto;
-  margin-left: auto;
-  border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
-  text-align: center;
 
   font-family: inherit;
   font-weight: 700;
@@ -162,6 +157,7 @@ p {
   text-align: center;
   letter-spacing: 0.06em;
 
+  border-radius: 4px;
   color: var(--main-white-color);
   background-color: transparent;
 }
@@ -286,7 +282,6 @@ p {
   display: flex;
   justify-content: space-evenly;
   margin-top: 16px;
-  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .clients-list {
@@ -336,9 +331,16 @@ p {
 
 .join-us-list {
   display: flex;
+  margin-top: 20px;
+}
+
+.join-us-list-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .address {
+  margin-top: 20px;
+
   font-style: inherit;
   font-weight: 400;
   font-size: 14px;
@@ -366,6 +368,15 @@ p {
   margin-bottom: 9px;
 }
 
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
 .footer-div {
-  width: calc((100% / 2 - 30px) / 2);
+  width: calc((50% - 30px) / 2);
+}
+
+.footer-div:not(:last-child) {
+  margin-right: 30px;
 }
