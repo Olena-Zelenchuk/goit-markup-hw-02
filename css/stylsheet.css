@@ -317,12 +317,13 @@ p {
 }
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: #2f303a;
 }
 
-.logo {
+.logo-footer.logo-web {
   display: inline-block;
-  margin-bottom: 20px;
 }
 
 .join-us {
@@ -333,8 +334,11 @@ p {
   color: var(--main-white-color);
 }
 
-.address {
+.join-us-list {
   display: flex;
+}
+
+.address {
   font-style: inherit;
   font-weight: 400;
   font-size: 14px;
@@ -344,11 +348,24 @@ p {
 }
 
 .address-link {
-  display: inline-block;
+  display: block;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--adress-link-color);
+}
+
+.address p {
+  display: inline-block;
+  margin-bottom: 9px;
+}
+
+.address-link:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-div {
+  width: calc((100% / 2 - 30px) / 2);
 }
