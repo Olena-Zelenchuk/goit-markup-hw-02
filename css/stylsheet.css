@@ -48,7 +48,6 @@ section {
 }
 
 h2,
-h3,
 p {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -56,7 +55,6 @@ p {
 
 .header-page {
   display: flex;
-  padding: ;
 }
 
 .navigation {
@@ -170,6 +168,11 @@ p {
   color: var(--main-white-color);
   background-color: transparent;
 }
+
+.hero button {
+  margin-bottom: 200px;
+}
+
 .btn-portfolio {
   font-family: inherit;
   font-weight: 500;
@@ -190,13 +193,15 @@ p {
   background-color: var(--accent-color);
 }
 
-.hero {
+.container.hero {
+  height: 600px;
   background: rgba(47, 48, 58, 0.8);
 }
 
 .hero-title {
+  padding-top: 200px;
   margin-top: 0;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 
   font-size: 44px;
   font-weight: 900;
@@ -208,6 +213,7 @@ p {
 }
 
 .section-title {
+  padding-top: 94px;
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -244,6 +250,10 @@ p {
   color: var(--dark-text-color);
 }
 
+.what-we-do .section-title {
+  padding-top: 0px;
+}
+
 .what-we-do-list {
   display: flex;
 }
@@ -264,6 +274,10 @@ p {
   color: var(--main-white-color);
   background: rgba(47, 48, 58, 0.8);
   text-align: center;
+}
+
+.our-team {
+  background-color: #f5f4fa;
 }
 
 .team-list {
@@ -313,7 +327,7 @@ p {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
-  tter-spacing: 0.03em;
+  letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--dark-text-color);
 }
@@ -350,10 +364,35 @@ p {
 .projects-list-item {
   width: calc((100% - 30px * 2) / 3);
   margin-right: 30px;
+  justify-content: center;
 }
 
 .projects-list-item:nth-child(3n) {
   margin-right: 0;
+}
+
+.projects-list-item:nth-child(n + 4) {
+  margin-top: 30px;
+}
+
+.projects-list-item a {
+  text-decoration: none;
+}
+
+.project-link p,
+h3 {
+  margin: 0 24px;
+}
+
+.names-pf {
+  margin-top: 20px;
+  margin-bottom: 4px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  color: var(--dark-text-color);
 }
 
 .footer {
@@ -368,6 +407,13 @@ p {
 
 .join-us {
   font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143px;
+  letter-spacing: 0.03em;
+  color: var(--main-white-color);
+}
+
+.mailing {
   font-size: 14px;
   line-height: 1.143px;
   letter-spacing: 0.03em;
@@ -427,11 +473,6 @@ p {
 }
 
 /**для div з блоком підписки**/
-.mailing {
-  background-color: rgba(255, 255, 255, 0.6);
-  width: calc((50%) * 1);
-  outline: 4px solid red;
-}
 
 .mailing-link {
   display: inline-block;

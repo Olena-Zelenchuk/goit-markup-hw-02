@@ -12,35 +12,37 @@
     <link rel="stylesheet" href="./css/stylsheet.css" />
   </head>
 
-  <header class="header-page">
-    <div class="container navigation">
-      <a href="./" class="logo-header"
-        ><span class="logo-web">Web </span>Studio</a
-      >
-      <nav>
-        <ul class="list nav-list">
-          <li class="nav-list-item">
-            <a href="./index.html" class="menu-link current">
-              Студия
-            </a>
-          </li>
-          <li class="nav-list-item">
-            <a href="./portfolio.html" class="menu-link">Портфолио</a>
-          </li>
-          <li class="nav-list-item">
-            <a href="#" class="menu-link">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="link-list">
-        <a href="mailto:info@devstudio.com" class="contacts-link"
-          >info@devstudio.com</a
-        >
-        <a href="tel:+380961111111" class="contacts-link">+38 096 111 11 11</a>
-      </div>
-    </div>
-  </header>
   <body>
+    <header class="header-page">
+      <div class="container navigation">
+        <a href="./" class="logo-header"
+          ><span class="logo-web">Web </span>Studio</a
+        >
+        <nav>
+          <ul class="list nav-list">
+            <li class="nav-list-item">
+              <a href="./index.html" class="menu-link">
+                Студия
+              </a>
+            </li>
+            <li class="nav-list-item">
+              <a href="./portfolio.html" class="menu-link current">Портфолио</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#" class="menu-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="link-list">
+          <a href="mailto:info@devstudio.com" class="contacts-link"
+            >info@devstudio.com</a
+          >
+          <a href="tel:+380961111111" class="contacts-link"
+            >+38 096 111 11 11</a
+          >
+        </div>
+      </div>
+    </header>
     <main>
       <h1 hidden>Portfolio</h1>
       <!--Projects-->
@@ -67,23 +69,26 @@
         <div class="container">
           <ul class="list projects-list">
             <li class="projects-list-item">
-              <a href="#" aria-label="ссылка Технокряк"
+              <a href="#" aria-label="ссылка Технокряк" class="project-link"
                 ><img
                   src="./portfolioimg/website1.jpg"
                   alt="Технокряк"
                   width="370"
                 />
-                <p class="main-text">
+                <p class="main-text text-pf">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
                 </p>
-                <h3 class="names">Технокряк</h3>
+                <h3 class="names-pf">Технокряк</h3>
                 <p class="main-text">Веб-сайт</p>
               </a>
             </li>
             <li class="projects-list-item">
-              <a href="#" aria-label="Постер New Orlean vs Golden Star"
+              <a
+                href="#"
+                aria-label="Постер New Orlean vs Golden Star"
+                class="project-link"
                 ><img
                   src="./portfolioimg/design.jpg"
                   alt="Постер New Orlean vs Golden Star"
@@ -94,14 +99,14 @@
                   коронавируса. Компании используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
                 </p>
-                <h3 lang="eng" class="names">
+                <h3 lang="eng" class="names-pf">
                   Постер New Orlean vs Golden Star
                 </h3>
                 <p class="main-text">Дизайн</p>
               </a>
             </li>
             <li class="projects-list-item">
-              <a href="#" aria-label="Ресторан Seafood"
+              <a href="#" aria-label="Ресторан Seafood" class="project-link"
                 ><img
                   src="./portfolioimg/app1.jpg"
                   alt="Ресторан Seafood"
@@ -112,12 +117,12 @@
                   коронавируса. Компании используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
                 </p>
-                <h3 class="names">Ресторан Seafood</h3>
+                <h3 class="names-pf">Ресторан Seafood</h3>
                 <p class="main-text">Приложение</p>
               </a>
             </li>
             <li class="projects-list-item">
-              <a href="#" aria-label="Проект Prime"
+              <a href="#" aria-label="Проект Prime" class="project-link"
                 ><img
                   src="./portfolioimg/marketing.jpg"
                   alt="Проект Prime"
@@ -128,12 +133,12 @@
                   коронавируса. Компании используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
                 </p>
-                <h3 class="names">Проект Prime</h3>
+                <h3 class="names-pf">Проект Prime</h3>
                 <p class="main-text">Маркетинг</p>
               </a>
             </li>
             <li class="projects-list-item">
-              <a href="#" aria-label="Проект Boxes"
+              <a href="#" aria-label="Проект Boxes" class="project-link"
                 ><img
                   src="./portfolioimg/app2.jpg"
                   alt="Проект Boxes"
@@ -144,12 +149,15 @@
                   коронавируса. Компании используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
                 </p>
-                <h3 class="names">Проект Boxes</h3>
+                <h3 class="names-pf">Проект Boxes</h3>
                 <p class="main-text">Приложение</p>
               </a>
             </li>
             <li class="projects-list-item">
-              <a href="#" aria-label="Inspiration has no Borders"
+              <a
+                href="#"
+                aria-label="Inspiration has no Borders"
+                class="project-link"
                 ><img
                   src="./portfolioimg/website2.jpg"
                   alt="Inspiration has no Borders"
@@ -160,12 +168,15 @@
                   коронавируса. Компании используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
                 </p>
-                <h3 lang="eng" class="names">Inspiration has no Borders</h3>
+                <h3 lang="eng" class="names-pf">Inspiration has no Borders</h3>
                 <p class="main-text">Веб-сайт</p>
               </a>
             </li>
             <li class="projects-list-item">
-              <a href="#" aria-label="Издание Limited Edition"
+              <a
+                href="#"
+                aria-label="Издание Limited Edition"
+                class="project-link"
                 ><img
                   src="./portfolioimg/design2.jpg"
                   alt="Издание Limited Edition"
@@ -176,12 +187,12 @@
                   коронавируса. Компании используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
                 </p>
-                <h3 class="names">Издание Limited Edition</h3>
+                <h3 class="names-pf">Издание Limited Edition</h3>
                 <p class="main-text">Дизайн</p>
               </a>
             </li>
             <li class="projects-list-item">
-              <a href="#" aria-label="Проект LAB"
+              <a href="#" aria-label="Проект LAB" class="project-link"
                 ><img
                   src="./portfolioimg/marketing2.jpg"
                   alt="Проект LAB"
@@ -192,12 +203,12 @@
                   коронавируса. Компании используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
                 </p>
-                <h3 class="names">Проект LAB</h3>
+                <h3 class="names-pf">Проект LAB</h3>
                 <p class="main-text">Маркетинг</p>
               </a>
             </li>
             <li class="projects-list-item">
-              <a href="#" aria-label="Growing Business">
+              <a href="#" aria-label="Growing Business" class="project-link">
                 <img
                   src="./portfolioimg/app3.jpg"
                   alt="Growing Business"
@@ -208,7 +219,7 @@
                   коронавируса. Компании используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
                 </p>
-                <h3 lang="eng" class="names">Growing Business</h3>
+                <h3 lang="eng" class="names-pf">Growing Business</h3>
                 <p class="main-text">Приложение</p>
               </a>
             </li>
@@ -260,9 +271,11 @@
             </li>
           </ul>
         </div>
-        --
+        <!--for mailing-block-->
         <div class="mailing">
-          <a href="#" class="mailing-link">Подписаться</a>
+          <p><b>ПОДПИШИТЕСЬ НА РАССЫЛКУ</b></p>
+          <input type="E-mail" />
+          <button type="button">Подписаться</button>
         </div>
       </div>
     </footer>
